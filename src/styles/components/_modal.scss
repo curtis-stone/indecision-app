@@ -1,0 +1,39 @@
+.ReactModalPortal > div { // targets divs that are direct children of the ReactModalPortal className
+    opacity: 0; // ReactModalPortal names found in elements in dev tools
+
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center; // centers vertically
+    display: flex;
+    justify-content: center; // centers horizontally
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: $light-blue;
+    color: white;
+    max-width: 30rem;
+    outline:none;
+    padding: $large;
+    text-align: center;
+}
+
+.modal__title {
+    margin: 0 0 $medium 0 // top, right, bottom, left
+}
+
+.modal__body {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 $large 0; // top, right, bottom, left
+    word-break: break-all //breaks really long words into multiple lines!
+}

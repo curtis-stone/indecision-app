@@ -1,0 +1,17 @@
+// bem syntax
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: $large $medium; // large top-bottom, medium left-right
+    border-bottom: 1px solid lighten($light-blue, 10%);
+
+}
+
+.option__text {
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    word-break: break-all //breaks really long words into multiple lines!
+}

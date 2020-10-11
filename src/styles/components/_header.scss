@@ -1,0 +1,33 @@
+// normalize css to reset browser settings!
+// yarn add normalize.css@7.0.0, import it in app.js! can be found in node_modules
+
+.header {
+    background: $off-black;
+    color: white;
+    margin-bottom: $medium;
+    padding: $medium 0;
+
+    // scss can have Nested Selectors! but should be avoided
+    // h1 {
+    //     color:red;
+    // }
+}
+
+// use BEM (Block Element Modifier) Syntax (getbem.com)
+.header__title { 
+    font-size: $large;
+    margin:0;
+}
+
+.header__subtitle {
+    color: $off-white;
+    font-size: $medium;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin: 0 0 $xl-size 0;
+    }
+}

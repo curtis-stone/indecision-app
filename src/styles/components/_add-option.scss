@@ -1,0 +1,36 @@
+// Add Option Error
+.add-option-error {
+  color: $off-white;
+  font-style: italic;
+  margin: $medium 0 0 0;
+  padding: 0 $medium;
+
+}
+
+// Add Option
+.add-option {
+    display: flex;
+    flex-direction: column;
+    padding: $medium;
+}
+
+.add-option__input {
+    background: $dark-blue;
+    border: none;
+    border-bottom: .3rem solid darken($dark-blue, 10%);
+    color: $off-white;
+    flex-grow: 1;
+    margin: 0 0 $small 0;
+    // margin-right: $small;
+    padding: $small;
+}
+
+// media queries for mobile screens. CSS feature
+@media (min-width: $desktop-breakpoint) { // when screen width is less than 45rem, apply these styles!
+  .add-option { 
+      flex-direction: row
+  }
+  .add-option__input {
+    margin: 0 $small 0 0;
+  }
+}

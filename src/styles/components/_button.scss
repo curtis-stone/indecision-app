@@ -1,0 +1,40 @@
+// Big Button
+.big-button {
+    background: $purple;
+    border:none;
+    border-bottom: .6rem solid darken($purple, 10%);
+    color: white;
+    font-weight: bold;
+    font-size: $large;
+    width: 100%;
+    margin-bottom: $medium;
+    padding: 2.4rem;
+}
+
+.big-button:disabled {
+    opacity: 0.5;
+}
+
+// Regular Buttons
+.button {
+    background: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple, 10%);
+    color:white;
+    font-weight: 500;
+    padding: $small;
+}
+
+// bem hyphens used for style modifiers (copy a style but tweak it a little)
+.button--link {
+    background:none;
+    border:none;
+    color: $off-white;
+    padding:0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin: 0 0 $xl-size 0;
+    }
+}
