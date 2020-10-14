@@ -22,23 +22,12 @@ module.exports = (env) => {
           exclude: /node_modules/,
         },
         {
-          test: /\.s?css$/, 
-          use: CSSExtract.extract({
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: true,
-                },
-              },
-              {
-                loader: 'sass-loader',
-                options: {
-                    sourceMap: true
-                }
-              },
-            ],
-          }),
+          test: /\.s?css$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader'
+          ]
         },
       ],
     },
